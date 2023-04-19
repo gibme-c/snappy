@@ -91,9 +91,9 @@ endif(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
 # it prominent in the GUI.
 option(BUILD_SHARED_LIBS "Build shared libraries(DLLs)." OFF)
 
-option(SNAPPY_BUILD_TESTS "Build Snappy's own tests." ON)
+option(SNAPPY_BUILD_TESTS "Build Snappy's own tests." OFF)
 
-option(SNAPPY_BUILD_BENCHMARKS "Build Snappy's benchmarks" ON)
+option(SNAPPY_BUILD_BENCHMARKS "Build Snappy's benchmarks" OFF)
 
 option(SNAPPY_FUZZING_BUILD "Build Snappy for fuzzing." OFF)
 
@@ -101,7 +101,7 @@ option(SNAPPY_REQUIRE_AVX "Target processors with AVX support." OFF)
 
 option(SNAPPY_REQUIRE_AVX2 "Target processors with AVX2 support." OFF)
 
-option(SNAPPY_INSTALL "Install Snappy's header and library" ON)
+option(SNAPPY_INSTALL "Install Snappy's header and library" OFF)
 
 include(TestBigEndian)
 test_big_endian(SNAPPY_IS_BIG_ENDIAN)
